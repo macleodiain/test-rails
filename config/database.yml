@@ -86,7 +86,7 @@ production:
   primary: &primary_production
     <<: *default
     database: test_project_production
-    url: <%= Rails.application.credentials.db_url%>
+    url: <%= Rails.application.credentials.db_url %>
   cache:
     <<: *sqlite
     database: storage/test_project_production_cache.sqlite3
