@@ -28,7 +28,7 @@ class PostsController < ApplicationController
         redirect_to @post, notice: "Post was successfully created."
 
       else
-        render :new, status: :unprocessable_entity
+        # render :new, status: :unprocessable_entity
 
       end
   end
