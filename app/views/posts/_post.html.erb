@@ -9,4 +9,15 @@
     <%= post.body %>
   </p>
 
+  <p>
+     <% post.errors.full_messages_for(:title).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </p>
+  <p>
+     <% post.errors.full_messages_for(:body).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </p>
+
 </div>
